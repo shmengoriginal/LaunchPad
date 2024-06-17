@@ -1,0 +1,73 @@
+ERD Diagram
+
+Users Table:
+
+
+User_ID (Primary Key)
+Username
+First Name (Optional)
+Last Name (Optional)
+User_Email
+User_Phone (Optional)
+User_City(Optional)
+User_State
+User_Country
+Bio Field (Optional)
+Password Hash
+
+
+Campaigns Table:
+
+Campaign_ID (Primary Key)
+Campaign_Title
+Campaign_Start_Date
+Campaign_End_Date
+Campaign_Category
+Campaign_Description
+Campaign_Goal
+Campaign_Location (Optional)
+Campaign_Owner_ID (Foreign Key referencing Users.User_ID)
+Campaign_Image
+Funding_Progress (Amount raised so far)
+
+Donations Table:
+Donation_ID (Primary Key)
+Donor_ID (Foreign Key referencing Users.User_ID)
+Campaign_ID (Foreign Key referencing Campaigns.Campaign_ID)
+Donation_Amount
+Donation_Date_Time
+Payment_Method
+Transaction_ID
+Donor_Comments 
+
+Campaign_Videos Table (Optional):
+Video_ID (Primary Key)
+Campaign_ID (Foreign Key referencing Campaigns.Campaign_ID)
+Video_URL
+
+Payment Method: 
+User_ID PK
+payment_type
+
+Card:
+
+user_id FK
+card_name PK
+card_number
+card_sec_code
+card_exp_date
+
+Check:
+
+user_id FK
+account_name PK
+account_number
+router_number
+check_number
+
+
+Campaign_Updates Table (Optional):
+Update_ID (Primary Key)
+Campaign_ID (Foreign Key referencing Campaigns.Campaign_ID)
+Update_Date
+Update_Content

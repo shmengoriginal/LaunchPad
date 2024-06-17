@@ -1,0 +1,124 @@
+Campaigns
+
+
+
+	1.	Get all public campaigns
+
+			Endpoint: GET whateverURLwe'reusing/campaigns/
+
+			Description: Returns a list of all public campaigns. Ordered by features.
+
+			Frontend Connection:
+
+				Component: Campaign List
+
+				Pages: Home page
+
+	2.	Get current userscampaigns
+
+    			Endpoint: GET whateverURLwe'reusing/user-campaigns
+
+    			Description: Returns a list of campaigns made by the current user.
+
+    			Frontend Connection:
+
+    				Component: Campaign List
+
+    				Pages: Dashboard
+
+
+	3.	Get campaign by ID / Name
+
+			Endpoint: GET whateverURLwe'reusing/campaigns/{id}
+
+			Description: Returns a campaign based on campaign_ID.
+
+			Frontend Connection:
+
+				Component: Campaign Details
+
+				Pages: Campaign Details Page
+
+	4.	Create a new campaign
+
+			Endpoint: POST whateverURLwe'reusing/campaigns/
+
+			Description: Creates a new campaign.
+
+			Frontend Connection:
+
+				Component: Start New Campaign Form
+
+				Pages: Start New Campaign Page
+
+	5.	Update campaign by ID / name (Talk to Andy, wondering how to handle search feature)
+
+			Endpoint: PUT whateverURLwe'reusing/campaigns/{id}
+
+			Description: Updates a campaign based on campaign_ID.
+
+			Frontend Connection:
+
+				Component: Manage Campaign Cards
+
+				Pages: Manage Campaign Page
+
+	6.	Delete campaign by ID
+
+			Endpoint: DELETE whateverURLwe'reusing/campaigns/{id}
+
+			Description: Deletes a campaign based on campaign_ID.
+
+			Frontend Connection:
+
+				Component: Manage Campaign Cards
+
+				Pages: Manage Campaign Page
+	
+Donations
+
+
+
+	1.	Get donations for a campaign
+
+			Endpoint: GET whateverURLwe'reusing/campaigns/{id}/donations
+
+			Description: Returns a list of donations for a specific campaign.
+
+			Frontend Connection:
+
+				Component: Donation Tracker
+
+				Pages: Donation Tracker Page
+
+	2.	Create a donation
+
+			Endpoint: POST whateverURLwe'reusing/campaigns/{id}/donations
+
+			Description: Creates a new donation for a specific campaign.
+
+			Frontend Connection:
+
+				Component: Donation Form
+
+				Pages: Campaign Details Page
+
+Not needed for now: 
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+	
+
+	3.	Get user details
+
+			Endpoint: GET whateverURLwe'reusing/users/{id}
+
+			Description: Returns user details based on user_ID.
+
+			Frontend Connection:
+
+				Component: User Profile
+
+				Pages: User Profile Page
+
+-------------------------------------------------------------------------------------------------------------------------------------
